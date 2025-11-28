@@ -2,7 +2,7 @@
 // config/db.php
 
 $host = "localhost";
-$dbname = "dblibreria";   // NOMBRE CORRECTO SEGÚN EL DUMP DEL PROFESOR
+$dbname = "dblibreria";   
 $user = "root";
 $pass = "123456789";
 
