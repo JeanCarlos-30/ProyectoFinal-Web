@@ -1,0 +1,14 @@
+<?php
+// config/db.php
+
+$host = "localhost";
+$dbname = "dblibreria";   // NOMBRE CORRECTO SEGÚN EL DUMP DEL PROFESOR
+$user = "root";
+$pass = "123456789";
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Error en la conexión: " . $e->getMessage());
+}

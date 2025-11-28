@@ -1,0 +1,180 @@
+/* -----------------------------------
+   ESTILOS GENERALES
+----------------------------------- */
+
+body {
+    background-color: #F8F5F2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Fade-in DEL CUERPO COMPLETO */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* -----------------------------------
+   NAVBAR
+----------------------------------- */
+
+.navbar {
+    background-color: #2F2F2F !important;
+    padding: 15px 20px;
+    animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF !important;
+}
+
+.nav-link {
+    color: #E8E8E8 !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #1E88E5 !important;
+    transform: translateY(-2px);
+}
+
+
+/* -----------------------------------
+   TITULOS
+----------------------------------- */
+
+h1, h2, h3, h4 {
+    color: #2F2F2F;
+    font-weight: 700;
+    animation: fadeIn 0.8s ease;
+}
+
+
+/* -----------------------------------
+   CARRUSEL
+----------------------------------- */
+
+.carousel-item img {
+    max-height: 1000px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: zoomIn 0.7s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(1.08); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+/* -----------------------------------
+   TARJETAS
+----------------------------------- */
+
+.card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s;
+    animation: slideUp 0.7s ease;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    background-color: #FAF9F6;
+}
+
+.card h5 {
+    color: #2F2F2F;
+    font-weight: bold;
+}
+
+.card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.precio-libro {
+    color: #1E88E5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* -----------------------------------
+   BOTONES
+----------------------------------- */
+
+.btn-primary {
+    background-color: #1E88E5 !important;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1669B2 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+
+/* -----------------------------------
+   FORMULARIO DE CONTACTO
+----------------------------------- */
+
+form input, form textarea {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+form input:focus, 
+form textarea:focus {
+    border-color: #1E88E5;
+    box-shadow: 0 0 8px rgba(30,136,229,0.4);
+}
+
+
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+
+footer {
+    background-color: #202020;
+    color: #E5E5E5;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    animation: fadeIn 1.3s ease;
+}
+
+footer a {
+    color: #1E88E5;
+    text-decoration: none;
+}
+
